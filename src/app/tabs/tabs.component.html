@@ -1,0 +1,32 @@
+<!-- <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" [ngClass]="{'active': selectedTab === 'all'}">
+          <a (click)="handleTabChange('all')" class="nav-link" href="#">Heros</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': selectedTab === 'good'}">
+          <a (click)="handleTabChange('good')" class="nav-link" href="#">Good Side</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': selectedTab === 'bad'}">
+            <a (click)="handleTabChange('bad')" class="nav-link" href="#">Dark Side</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+  <!-- <app-list [chars]="characters"></app-list> -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" >
+            <a class="nav-link" [routerLink]="'/chars/all'" [routerLinkActive]="'active'">Heros</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" [routerLink]="'/chars/good'" [routerLinkActive]="'active'">Good Side</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" [routerLink]="'/chars/bad'" [routerLinkActive]="'active'">Dark Side</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <router-outlet></router-outlet>

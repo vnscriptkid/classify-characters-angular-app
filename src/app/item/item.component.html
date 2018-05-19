@@ -1,0 +1,14 @@
+<li class="list-group-item clearfix">{{ char.name }}
+  <div class="float-right">
+    <button
+      (click)="changeSide(char, 'good')"
+      class="btn btn-success"
+      [disabled]="char.side === 'good'"
+      >Good guy</button>
+      <button
+      (click)="changeSide(char, 'bad')"
+      class="btn btn-danger"
+      [disabled]="char.side === 'bad'"
+    >Bad guy</button>
+  </div>
+</li>
